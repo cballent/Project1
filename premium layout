@@ -1,0 +1,15 @@
+export default function Layout({ children }) {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="backdrop-blur bg-white/80 border-b">
+        <div className="max-w-6xl mx-auto flex justify-between p-4">
+          <h1 className="font-bold text-lg">TailSpin</h1>
+        </div>
+      </nav>
+
+      <main className="max-w-6xl mx-auto p-6">
+        {children}
+      </main>
+    </div>
+  );
+}
