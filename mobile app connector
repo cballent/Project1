@@ -1,0 +1,6 @@
+const API_URL = "https://tailspin.vercel.app/api";
+
+export async function getBookings() {
+  const res = await fetch(`${API_URL}/bookings`);
+  return res.json();
+}
